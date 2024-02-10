@@ -1,0 +1,21 @@
+.avatar {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.avatarWithBorder {
+  width: calc(5rem + 12px);
+  height: calc(5rem + 12px);
+  object-fit: cover;
+
+  border-radius: 8px;
+  outline: 1px transparent;
+  border: 2px solid var(--gray-600);
+  outline: 2px solid var(--green);
+
+  cursor: pointer;
+}

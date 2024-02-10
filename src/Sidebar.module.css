@@ -1,0 +1,71 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--gray-600);
+}
+
+.cover {
+  width: 100%;
+  object-fit: cover;
+  height: 7.2rem;
+}
+
+.author {
+  margin: -2.8rem auto 0;
+}
+
+.author> div {
+  margin-top: 1.6rem;
+}
+
+.author> div> strong {
+  color: var(--gray-100);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.author> div >p {
+  padding-bottom: 2.4rem;
+
+  color: var(--gray-300);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.sidebar > footer {
+  border-top: 1px solid var(--gray-500);
+  padding: 2.4rem 3.2rem 3.2rem;
+}
+
+.editProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1.6rem 2.4rem 1.4rem 2.4rem;
+
+  color: var(--green);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border: 1px solid var(--green);
+  border-radius: 8px;
+
+  transition: all 200ms;
+}
+.editProfile:hover {
+  color: var(--white);
+  background: var(--green);
+}

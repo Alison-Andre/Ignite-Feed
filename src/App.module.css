@@ -1,0 +1,23 @@
+/* Conteiner do main */
+.wrapper {
+  margin: 3.2rem auto;
+  padding-inline: 16rem;
+
+  width: 100%;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 256px 1fr; /* Duas colunas na aplicação */
+  align-items: flex-start;
+
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-inline: 2rem;
+    grid-template-columns: 1fr; /* Altera para uma única coluna */
+  }
+
+  html {
+    font-size: 60%;
+  }
+}
