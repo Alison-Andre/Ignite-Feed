@@ -7,7 +7,7 @@ import styles from './Post.module.css'
 // Bibliotecas
 import { format, formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale/pt-BR'
-import { FormEvent, ChangeEvent ,useState } from 'react'
+import { FormEvent, ChangeEvent, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 
 // Types
@@ -56,12 +56,12 @@ export function Post({ post }: PostProps) {
   }
 
   // 2 - Estado para a caixa de comentários
-  const [comment, setComment] = useState(["Comentário ha hora"])
+  const [comment, setComment] = useState(["Post da horaa 🥳"])
 
   // 5 - Função passada para o <form/>
   function handleCreateNewComment(event: FormEvent) {
     event?.preventDefault()
-  
+
     // Atualiza o estado da commentBox
     setComment([...comment, newCommentText])
     setNewCommentText('')
@@ -109,12 +109,14 @@ export function Post({ post }: PostProps) {
       <div className={styles.content}>
         {/* Verifica a etiqueta que demos para cada tipo de dado */}
         {post.content.map(line => {
-          
+
           if (line.type === 'paragraph') {
-            return <p key={line.id}>{line.content}</p> } 
-          
-            else if (line.type === 'link') {
-            return <p key={line.id}><a href="#">{line.content}</a></p> }
+            return <p key={line.id}>{line.content}</p>
+          }
+
+          else if (line.type === 'link') {
+            return <p key={line.id}><a href="#">{line.content}</a></p>
+          }
         })}
 
         <section className={styles.links}>
@@ -137,8 +139,8 @@ export function Post({ post }: PostProps) {
           onChange={handleNewCommentText} // 1 - Executa a função
           placeholder='Escreva um comentário...'
         />
-        <button 
-          type='submit' 
+        <button
+          type='submit'
           form='comentário'
           disabled={isNewCommentTextEmpity}
         >Publicar</button>
@@ -147,9 +149,9 @@ export function Post({ post }: PostProps) {
 
       {comment.map(comment => {
         return (
-          <Comment 
-            key={uuidv4()} 
-            content={comment} 
+          <Comment
+            key={uuidv4()}
+            content={comment}
             onDeleteComment={deleteComment}
           />
         )
