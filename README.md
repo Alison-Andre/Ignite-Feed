@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Ignite Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ignite feed é um projeto simples que simula o feed das redes sociais,<br> com funcionalidades de comentários, likes e apagar comentário.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+<ul>
+  [x] - adicionar comentários<br>
+  [x] - aplaudir (likes)<br>
+  [x] - apagar comentário<br>
+</ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como usar
 
-- Configure the top-level `parserOptions` property like this:
+1. Clonar repositório
+``git clone https://github.com/Alison-Andre/Ignite-Feed.git ``
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Instalar dependências
+``yarn`` ou ``npm i``
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Subir projeto Local
+``yarn dev`` ou ``npm run dev``
+
+4. Acessar projeto
+``http://localhost:3000/``
+
+## Tecnologias utilizadas
+
+<ul>
+  <li>ReactJS</li><br>
+  <li>Vite</li><br>
+  <li>React Dom</li><br>
+  <li>Date-fns</li><br>
+  <li>Phosphor-react</li><br>
+</ul>
+
+## Considerações finais
+
+### Desenvolvido por ``Alison Andre Monteiro da Silva``
